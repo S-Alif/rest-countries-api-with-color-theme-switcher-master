@@ -1,0 +1,166 @@
+/* designs for homepage or landing page */
+
+/*================= search-filter ==================*/
+.search-filter{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.search-filter .content{
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* input field */
+.content label{
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    border-radius: 5px;
+}
+.content label span{
+    width: 40px;
+    height: 40px;
+    padding-left: 30px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--element-color);
+}
+.content label .input-field{
+    width: 250px;
+    height: 40px;
+    background: var(--element-color);
+    color: var(--text-color);
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    font-weight: var(--semi-bold);
+}
+.input-field::placeholder{
+    color: var(--text-color);
+}
+
+/* filter buttons */
+.content .region-filter{
+    padding: 10px 15px;
+    background-color: var(--element-color);
+    color: var(--text-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.region-filter span{
+    padding-left: 10px;
+    font-size: 11px;
+}
+
+.content .region-group{
+    position: relative;
+}
+.region-group .regions{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    top: 45px;
+    border-radius: 5px;
+    background-color: var(--element-color);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.regions button{
+    display: block;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    text-transform: capitalize;
+    color: var(--text-color);
+}
+.regions.open{
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s;
+}
+
+
+
+/*================= show countries ==================*/
+.box{
+    width: 100%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+/* image */
+.box .image{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* info */
+.box .country-info{
+    padding: 20px;
+    background-color: var(--element-color);
+}
+
+.country-info .country-name{
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-weight: var(--extra-bold);
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 16px;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+.country-info p{
+    font-size: 14px;
+    font-weight: var(--semi-bold);
+}
+.country-name:hover{
+    border-bottom: 2px solid;
+    transition: 0.3s;
+}
+.country-info .capital{
+    padding-bottom: 20px;
+}
+
+.error-msg{
+    font-weight: var(--extra-bold);
+    font-size: 20px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+
+/* responsive design */
+@media screen and (max-width: 576px) {
+    .search-filter .content{
+        display: flex;
+        justify-content: none;
+        flex-direction: column;
+        gap: 30px;
+    }
+}

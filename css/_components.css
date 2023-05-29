@@ -1,0 +1,33 @@
+/*================= header ==================*/
+header{
+    width: 100%;
+    height: 60px;
+    background-color: var(--bg);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+}
+header .nav-elements{
+    width: 100%;
+    height: 60px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-elements .mode-btn{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.mode-btn span{
+    padding-right: 5px;
+}

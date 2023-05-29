@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/homepage.css">
+
+    <title>REST Countries API with color theme switcher</title>
+</head>
+<body data-mode="light">
+    
+    <!-- header -->
+    <header>
+
+        <div class="container">
+            <div class="nav-elements">
+                <h4 class="title-text">Where in the world?</h4>
+                <button type="button" class="mode-btn" id="mode-btn">
+                    <span>
+                        <i class="fa-solid fa-moon dark d-none"></i>
+                        <i class="fa-regular fa-moon light"></i>
+                    </span>
+                    dark mode
+                </button>
+            </div>
+        </div>
+
+    </header>
+    <!-- header -->
+
+    <!-- main -->
+    <main>
+        
+        <!-- search and filter -->
+        <section class="search-filter">
+            <div class="container">
+                <div class="content">
+
+                    <div class="input-group">
+                        <label for="name-input">
+                            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <input type="text" class="input-field" id="name-input" placeholder="Search for a country...">
+                        </label>
+                    </div>
+
+                    <div class="input-group region-group">
+                        <button type="button" class="region-filter" id="region-filter">Filter by Region <span><i class="fa-solid fa-angle-down"></i></span></button>
+
+                        <ul class="regions">
+                            <button type="button" class="region-selector" value="all">all</button>
+                            <button type="button" class="region-selector" value="africa">africa</button>
+                            <button type="button" class="region-selector" value="america">america</button>
+                            <button type="button" class="region-selector" value="asia">asia</button>
+                            <button type="button" class="region-selector" value="europe">europe</button>
+                            <button type="button" class="region-selector" value="oceania">oceania</button>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+        <!-- show the countries -->
+        <section class="show-countries">
+            <div class="container">
+                <div class="row"></div>
+            </div>
+        </section>
+
+    </main>
+    <!-- main -->
+
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>

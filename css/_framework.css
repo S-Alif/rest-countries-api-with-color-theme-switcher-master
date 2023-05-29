@@ -1,0 +1,85 @@
+/* framework for the project */
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.columns, .column-half{
+    flex: 0 0 auto;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.d-none{
+    display: none;
+}
+
+/* responsive design */
+@media screen and (min-width: 576px) {
+    .container{
+        width: 540px;
+    }
+    .columns{
+        width: 47%;
+        padding: 0 10px;
+    }
+    .column-half{
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .container{
+        width: 720px;
+    }
+    .columns{
+        width: 31.33333%;
+        padding: 0 10px;
+    }
+    .column-half{
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .container{
+        width: 960px;
+    }
+    .columns{
+        width: 30.33333%;
+        padding: 0 10px;
+    }
+    .column-half{
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container{
+        width: 1140px;
+    }
+    .columns{
+        width: 22%;
+        padding: 0 10px;
+    }
+    .column-half{
+        width: 50%;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .container{
+        width: 1320px;
+    }
+    .columns{
+        width: 22%;
+        padding: 0 10px;
+    }
+    .column-half{
+        width: 50%;
+    }
+}

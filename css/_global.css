@@ -1,0 +1,20 @@
+/* designs that are used globally */
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background: var(--bg);
+    font-family: var(--font);
+    color: var(--text-color);
+    line-height: 1.5;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

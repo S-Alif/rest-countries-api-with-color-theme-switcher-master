@@ -1,0 +1,10 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+/* font-awesome icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+/* import the designs */
+@import '_variables.css';
+@import '_global.css';
+@import '_framework.css';
+@import '_components.css';
