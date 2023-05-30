@@ -31,3 +31,19 @@ header .nav-elements{
 .mode-btn span{
     padding-right: 5px;
 }
+
+/*================= footer ==================*/
+footer{
+    padding: 50px 0;
+    text-align: center;
+    background: var(--bg);
+}
+footer .attribution{
+    color: var(--text-color);
+    font-weight: var(--semi-bold);
+}
+footer .attribution a{
+    color: var(--text-color);
+    font-weight: var(--extra-bold);
+    text-decoration: none   ;
+}

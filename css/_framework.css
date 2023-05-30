@@ -7,7 +7,8 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-direction: row;
 }
 .columns, .column-half{
     flex: 0 0 auto;
@@ -24,6 +25,9 @@
     .container{
         width: 540px;
     }
+    .row{
+        gap: 32px;
+    }
     .columns{
         width: 47%;
         padding: 0 10px;
@@ -37,8 +41,11 @@
     .container{
         width: 720px;
     }
+    .row{
+        gap: 43px;
+    }
     .columns{
-        width: 31.33333%;
+        width: 47%;
         padding: 0 10px;
     }
     .column-half{
@@ -49,6 +56,9 @@
 @media screen and (min-width: 992px) {
     .container{
         width: 960px;
+    }
+    .row{
+        gap: 43px;
     }
     .columns{
         width: 30.33333%;
@@ -63,23 +73,29 @@
     .container{
         width: 1140px;
     }
+    .row{
+        gap: 45px;
+    }
     .columns{
         width: 22%;
         padding: 0 10px;
     }
     .column-half{
-        width: 50%;
+        width: 45%;
     }
 }
 @media screen and (min-width: 1400px) {
     .container{
         width: 1320px;
     }
+    .row{
+        gap: 52px;
+    }
     .columns{
         width: 22%;
         padding: 0 10px;
     }
     .column-half{
-        width: 50%;
+        width: 47%;
     }
 }

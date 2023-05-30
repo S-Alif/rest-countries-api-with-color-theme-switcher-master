@@ -18,15 +18,13 @@
     background-color: var(--element-color);
     border-radius: 3px;
     margin-left: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 
 /*================= country-info ==================*/
 .country-info{
     padding-bottom: 40px;
-}
-.country-info .country-details{
-    padding-left: 40px;
 }
 
 /* country flag */
@@ -102,6 +100,14 @@
     .country-info .all-info{
         width: 100%;
         display: block;
+    }
+    .country-info .flag{
+        height: 280px;
+    }
+}
+@media screen and (max-width: 768px){
+    .go-back-btn .btn{
+        margin-left: 20px;
     }
     .country-info .flag{
         height: 200px;
